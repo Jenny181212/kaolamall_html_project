@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+#main .brand {
+    margin-top: 100px;
+}
+
+#main .brand .left {
+    width: 219px;
+    height: 355px;
+    border-right: 1px solid #e9e9e9;
+    background-color: #151515;
+}
+#main .brand .left a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#main .brand .left img{
+    width: 219px;
+    height: 219px;
+}
+
+#main .brand .left .line {
+    width: 100px;
+    height: 3px;
+    background-color: #ff1e32;
+}
+#main .brand .left .txt {
+    width: 219px;
+    height: 133px;
+}
+#main .brand .left .info {
+    color: #fff;
+}
+#main .brand .left .info span {
+    display: block;
+    text-align: center;
+}
+#main .brand .left .info .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+#main .brand .left .info .desc {
+    font-size: 14px;
+}
+
+#main .brand .left,
+#main .brand .list,
+#main .brand .list li{
+    float: left;
+}
+
+#main .brand .list {
+    width: 880px;
+    height: 354px;
+    border-top: 1px solid #e9e9e9;
+}
+#main .brand .list li{
+    position: relative;
+    width: 219px;
+    height: 176px;
+    border-right:1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    background-color: #fff;
+}
+#main .brand .list li:hover .active {
+    opacity: 1;
+}
+#main .brand .list li:hover .desc {
+    opacity: 0;
+}
+
+#main .brand .list li .name {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+#main .brand .list li .name img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 12px auto 0;
+    transition: top .6s ease,transform .3s ease;
+}
+#main .brand .list li:hover .name img {
+    top: -10px;
+    transform: scale(.66);
+}
+#main .brand .list li .active {
+    opacity: 0;
+    position: absolute;
+    /* 占满 */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ 
+}
+#main .brand .list li .active .follow{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    width: 52px;
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 20px;
+    text-align: center;
+}
+#main .brand .list li .active .info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 10px;
+}
+#main .brand .list li .active .info a {
+    display: inline-block;
+    width: 76px;
+    height: 32px;
+    line-height: 32px;
+    border: 2px solid #ff1e3c;
+    border-radius: 32px;
+    color: #ff1e3c;
+    font-size: 14px;
+}
+#main .brand .list li .active .info p {
+    color:#999;
+    margin: 99px 0 8px;
+}

@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+#top .tabbar {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 所有分类 */
+#top .tabbar .category {
+    position: relative;
+    float: left;
+    width: 164px;
+    background: linear-gradient(90deg,red,#ff3264);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ff5160;
+}
+#top .tabbar .category .lineicon {
+    margin-right: 20px;
+}
+/* 详细分类 */
+#top .tabbar .cate-list {
+    position: absolute;
+    width: 164px;
+    top: 41px;
+    z-index: 1;
+}
+#top .tabbar .cate-list li {
+    height: 38px;
+    line-height: 38px;
+    background: linear-gradient(90deg,red,#ff3264);
+    border-bottom: 0.5px solid #ff5160;
+    padding: 0 3px 0 2px;
+}
+#top .tabbar .cate-list li a {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color:#fff;
+}
+#top .tabbar .cate-list li a:hover {
+    color: #ff1e32;
+    background-color: #fff;
+}
+
+/* 列表 */
+#top .tabbar .list,
+#top .tabbar .list li {
+    float: left;
+}
+#top .tabbar .list {
+    padding-left: 25px;
+}
+#top .tabbar .list li {
+    margin-left: 20px;
+}
+#top .tabbar .list li a{
+    display: inline-block;
+    padding: 0 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#top .tabbar .list li a:hover {
+    color:#ff1e32;
+}
+
+
+/* 轮播图 */
+#top .banner {
+    position: relative;
+    overflow: hidden;
+}
+#top .banner .swiper {
+    display: block;
+}
+
+#top .banner .swiper img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -9;
+}
+#top .banner .swiper:hover .control {
+    display: block;
+}
+#top .banner .swiper .control {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    height: 68px;
+}
+#top .banner .swiper .control i {
+    width: 34px;
+    height: 68px;
+    background-image: url('../assets/img/icon1.png') ;
+}
+#top .banner .swiper .control .prev {
+    float: left;
+    margin-left: 174px;
+    background-position:-625px -68px;
+}
+#top .banner .swiper .control .prev:hover {
+    background-position: -625px -153px;
+}
+#top .banner .swiper .control .next {
+    float: right;
+    background-position: -670px -67px;
+}
+#top .banner .swiper .control .next:hover {
+    background-position: -670px -153px;
+}
+
+#top .banner .swiper .dots {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+
+#top .banner .swiper .dots i {
+    float: left;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 15px;
+}
+#top .banner .swiper .dots i:hover {
+    background-color: #ff1e32;
+}
+#top .banner .swiper .dots .dot {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+}
+#top .banner .swiper .dots .dot .active {
+    background-color: #ff1e32;
+}
+
+
+/* 轮播图底下的 */
+#top .banner .bottom {
+    position: absolute;
+    bottom: 0;
+    /* 占据父元素 */
+    left: 0;
+    right: 0;
+    height: 45px;
+}
+#top .banner .bottom .blur {
+    /* 不占据空间 */
+    position: absolute;
+    /* 全部占据 */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    /* 利用背景来高斯模糊 */
+    /* background: url('../assets/img/banner1.png') center bottom;
+    filter :blur(8px); */
+
+    /* 考拉实际 利用颜色进行高斯模糊 */
+    background: rgba(0,0,0,.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4d000000,endColorstr=#4d000000)\9;
+}
+
+#top .banner .bottom .left,
+#top .banner .bottom .right  {
+    position: relative;
+    z-index: 1;
+    height: 45px;
+    line-height: 45px;
+}
+#top .banner .bottom .left {
+    float: left;
+}
+
+#top .banner .bottom .left li {
+    float: left;
+    margin-right: 30px;
+    /* background-color: #00f; */
+}
+#top .banner .bottom a {
+    color: #fff;
+}
+#top .banner .bottom .left li a i {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+#top .banner .bottom .right {
+    float: right;
+}
